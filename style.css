@@ -7,6 +7,11 @@ section{
   background-color: #84ceeb;
 }
 
+
+#aboutUs{
+  background-color: #84ceeb;
+}
+
 .btn{
   border: none;
   outline: none;
@@ -19,6 +24,6 @@ section{
 
 .btn:hover{
   background-color: white;
-  border: 1px solid;
   color: black;
 }
+
