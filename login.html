@@ -77,7 +77,7 @@
       <div class="container Form my-4 mx-5">
         <div class="row gx-0">
           <div class="col-lg-6">
-            <div class="col-lg-7" >
+            <div class="col-lg-7 float-end" >
               <img src="/assets/volunteers1.jpg" class="img-fluid shadow" alt="volunteer">
             </div>
           </div>
@@ -87,6 +87,16 @@
             <h1 class="font-weight-bold py-3">Welcome Back!</h1>
             <h4>Sign in To Community/NGO Account</h4>
             <form>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <select class="form-select my-3 px-4" name="idenity" id="identity" aria-label="Default select example">
+                    <option selected>Select Identity</option>
+                    <option value="1">NGO</option>
+                    <option value="2">Community Hall</option>
+                  </select>
+                </div>
+              </div>
+
               <div class="form-row">
                 <div class="col-lg-7">
                   <input type="email" placeholder="Email" class="form-control my-3 px-4">
