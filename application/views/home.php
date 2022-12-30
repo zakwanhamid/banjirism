@@ -15,7 +15,7 @@
   <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background:#5690e9">
     <div class="container-xxl">
       <a href="#intro" class="navbar-brand">
-        <img src="/assets/logoz.png"  height="50" alt="logo">
+        <img src="<?php echo base_url(); ?>/assets//logoz.png"  height="50" alt="logo">
       </a>
       <!-- toggle buttom for mobile nav -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -59,7 +59,7 @@
           <a href="#eBantuan" class="btn btn-lg ">Help Now</a>
         </div>
         <div class="col-md-5 text-center d-md-block " >
-          <img class="img-fluid shadow rounded-4" src="/assets/flood1.jpg" alt="courts">
+          <img class="img-fluid shadow rounded-4" src="<?php echo base_url(); ?>assets//flood1.jpg" alt="courts">
         </div>
       </div>
     </div>
@@ -97,7 +97,7 @@
           
           <div class="col-8 col-lg-4 col-xl-3">
             <div class="card border-0 shadow">
-              <img class="card-img-top" src="/assets/finances.jpg" alt="Finances">
+              <img class="card-img-top" src="<?php echo base_url(); ?>assets/finances.jpg" alt="Finances">
               <div class="card-body text-center py-4">
                 <h4 class="card-title">Finances</h4>
                 <p class="card-text mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reiciendis quas aliquam sunt, facilis perferendis.</p>
@@ -108,7 +108,7 @@
 
           <div class="col-8 col-lg-4 col-xl-3">
             <div class="card border-0 shadow">
-              <img class="card-img-top" src="/assets/energies.jpg" alt="Energies">
+              <img class="card-img-top" src="<?php echo base_url(); ?>assets/energies.jpg" alt="Energies">
               <div class="card-body text-center py-4">
                 <h4 class="card-title">Energies</h4>
                 <p class="card-text mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reiciendis quas aliquam sunt, facilis perferendis.</p>
@@ -119,7 +119,7 @@
 
           <div class="col-8 col-lg-4 col-xl-3">
             <div class="card border-0 shadow">
-              <img class="card-img-top" src="/assets/supplies.jpg" alt="Supplies">
+              <img class="card-img-top" src="<?php echo base_url(); ?>assets/supplies.jpg" alt="Supplies">
               <div class="card-body text-center py-4">
                 <h4 class="card-title">Supplies</h4>
                 <p class="card-text mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reiciendis quas aliquam sunt, facilis perferendis.</p>
