@@ -43,47 +43,13 @@
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-light " style="background:#5690e9">
-      <div class="container-xxl">
-        <a href="index.html#intro" class="navbar-brand">
-          <img src="/assets/logoz.png"  height="50" alt="logo">
-        </a>
-        <!-- toggle buttom for mobile nav -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#main-nav" aria controls="main-nav" aria-expanded="false"
-        aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <!-- navbar links -->
-        <div class="collapse navbar-collapse justify-content-end align-center fw-bold" id="main-nav">
-          <ul class="navbar-nav">
-            <li class="nav-item ">
-              <a class="nav-link" href="index.html#intro">Home</a>
-            </li>
-            <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="index.html#aboutUs">About Us</a>
-            </li>
-            <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="index.html#eBantuan">e-Bantuan</a>
-            </li>
-            <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="login.html">Log In</a>
-            </li>
-            <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="register.html">Register</a>   
-            </li>
-          </ul>
-        </div>
-      </div> 
-    </nav>
 
     <section id="register">
       <div class="container form my-4 mx-5">
         <div class="row gx-0">
           <div class="col-lg-6">
             <div class="col-lg-7 float-end">
-              <img src="/assets/volunteers1.jpg" class="img-fluid shadow" alt="volunteers">
+              <img src="<?php echo base_url(); ?>/assets/volunteers1.jpg" class="img-fluid shadow" alt="volunteers">
             </div>
           </div>
 
