@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register NGO</title>
+  <title>Login</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
   rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
@@ -13,11 +13,6 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    .row{
-      /* background-color: white; */
-      border-radius: 30px;
-      /* box-shadow: 12px 12px 22px black; */
-    }
 
     img{
       border-radius: 30px;
@@ -43,10 +38,10 @@
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-light " style="background:#5690e9">
+    <nav class="navbar navbar-expand-md navbar-light " style="background:#5690e9">
       <div class="container-xxl">
         <a href="index.html#intro" class="navbar-brand">
-          <img src="/assets/logoz.png"  height="50" alt="logo">
+          <img src="<?php echo base_url(); ?>/assets/logoz.png"  height="50" alt="logo">
         </a>
         <!-- toggle buttom for mobile nav -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -59,33 +54,34 @@
         <div class="collapse navbar-collapse justify-content-end align-center fw-bold" id="main-nav">
           <ul class="navbar-nav">
             <li class="nav-item ">
-              <a class="nav-link" href="index.html#intro">Home</a>
+              <a class="nav-link" href="home.php#intro">Home</a>
             </li>
             <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="index.html#aboutUs">About Us</a>
+              <a class="nav-link" href="home.php#aboutUs">About Us</a>
             </li>
             <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="index.html#eBantuan">e-Bantuan</a>
+              <a class="nav-link" href="home.php#eBantuan">e-Bantuan</a>
             </li>
             <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="login.html">Log In</a>
+              <a class="nav-link" href="login.php">Log in</a>
             </li>
             <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="register.html">Register</a>   
+              <a class="nav-link" href="register.php">Register</a>   
             </li>
           </ul>
         </div>
       </div> 
     </nav>
 
-    <section id="register">
-      <div class="container form my-4 mx-5">
+    <section id="login">
+      <div class="container Form my-4 mx-5">
         <div class="row gx-0">
           <div class="col-lg-6">
-            <div class="col-lg-7 float-end">
-              <img src="/assets/volunteers1.jpg" class="img-fluid shadow" alt="volunteers">
+            <div class="col-lg-7 float-end" >
+              <img src="<?php echo base_url(); ?>/assets/volunteers1.jpg" class="img-fluid shadow" alt="volunteer">
             </div>
           </div>
+          
 
           <div class="col-lg-6 px-5">
             <h1 class="font-weight-bold py-3">Welcome Back!</h1>
@@ -93,7 +89,11 @@
             <form>
               <div class="form-row">
                 <div class="col-lg-7">
-                  <input placeholder="Organisation Name" class="form-control my-3 px-4">
+                  <select class="form-select my-3 px-4" name="idenity" id="identity" aria-label="Default select example">
+                    <option selected>Select Identity</option>
+                    <option value="1">NGO</option>
+                    <option value="2">Community Hall</option>
+                  </select>
                 </div>
               </div>
 
@@ -108,28 +108,27 @@
                   <input type="password" placeholder="********" class="form-control my-3 px-4">
                 </div>
               </div>
-
-              <div class="form-row">
-                <div class="col-lg-7">
-                  <input type="password" placeholder="confirm password" class="form-control my-3 px-4">
-                </div>
-              </div>
   
               <div class="form-row">
                 <div class="col-lg-7">
-                  <button type="button" class="btn1 mb-3 shadow">Create Account</button>
+                  <button type="button" class="btn1 mb-3 shadow">Login</button>
                 </div>
               </div>
+
+              <!-- <a href="#">Forgot password ?</a>
+              <p>Don't have an account <a href="#">Register Here</a></p>-->
             </form>
           </div>
         </div>
       </div>
+
     </section>
+  
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
-    crossorigin="anonymous">
-    </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+  crossorigin="anonymous">
+  </script>
 </body>
 </html>

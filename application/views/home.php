@@ -38,10 +38,10 @@
           </li>
           <li class="nav-item ms-lg-4">
             
-            <a class="nav-link" href="login.html">Log In</a>
+            <a class="nav-link" href="login.php">Log In</a>
           </li>
           <li class="nav-item ms-lg-4">
-            <a class="nav-link" href="register.html">Register</a>   
+            <a class="nav-link" href="register.php">Register</a>   
           </li>
         </ul>
       </div>
