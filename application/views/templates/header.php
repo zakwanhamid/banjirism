@@ -16,7 +16,8 @@
 <style>
 
   section{
-    height: 100%;
+    /* height: 100%; */
+    min-height: 100vh;
     padding:150px 0;
   }
 
@@ -125,10 +126,10 @@
               <a class="nav-link" href="<?php echo base_url(); ?>">Home</a>
             </li>
             <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="home.php#aboutUs">About Us</a>
+              <a class="nav-link" href="#aboutUs">About Us</a>
             </li>
             <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="<?php echo base_url('Ebantuan/index'); ?>">e-Bantuan</a>
+              <a class="nav-link" href="#eBantuan">e-Bantuan</a>
             </li>
             <li class="nav-item ms-lg-4">
               <a class="nav-link" href="<?php echo base_url('Login/index'); ?>">Log in</a>
