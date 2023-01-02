@@ -57,10 +57,6 @@
   }
 
 
-  img{
-    border-radius: 30px;
-  }
-
   .btn1{
     border: none;
     outline: none;
@@ -86,9 +82,6 @@
     /* box-shadow: 12px 12px 22px black; */
   }
 
-  img{
-    border-radius: 30px;
-  }
 
   .btn1{
     border: none;
@@ -113,7 +106,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-light " style="background:#5690e9">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top " style="background:#5690e9">
       <div class="container-xxl">
         <a href="<?php echo base_url(); ?>" class="navbar-brand">
           <img src="<?php echo base_url(); ?>/assets/logoz.png"  height="50" alt="logo">
@@ -132,7 +125,7 @@
               <a class="nav-link" href="<?php echo base_url(); ?>">Home</a>
             </li>
             <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="<?php echo base_url('AboutUs/index'); ?>">About Us</a>
+              <a class="nav-link" href="home.php#aboutUs">About Us</a>
             </li>
             <li class="nav-item ms-lg-4">
               <a class="nav-link" href="<?php echo base_url('Ebantuan/index'); ?>">e-Bantuan</a>
