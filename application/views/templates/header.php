@@ -9,61 +9,106 @@
   rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
   crossorigin="anonymous">
 
-  <link rel="stylesheet" href="<?php echo base_url(); ?> /">
+  <link rel="stylesheet" href="views/style.css">
+ 
 </head>
 
 <style>
 
-img{
-  border-radius: 30px;
-}
+  section{
+    height: 100%;
+    padding:150px 0;
+  }
 
-.btn1{
-  border: none;
-  outline: none;
-  height: 50px;
-  width: 100%;
-  background-color: black;
-  color: white;
-  border-radius: 5px;
-  font-weight: bold;
-}
+  #intro{
+    background-color: #84ceeb;
+  }
 
-.btn1:hover{
-  background-color: white;
-  /* border: 1px solid; */
-  color: black;
-}
+  #aboutUs{
+    background-color: #84ceeb;
+  }
+
+  #eBantuan{
+    background-color: #84ceeb;
+  }
+
+  #login{
+    background-color: #84ceeb;
+  }
+
+  #register{
+    background-color: #84ceeb;
+  }
+
+
+  .btn{
+    border: none;
+    outline: none;
+    height: 50px;
+    background-color: #8860d0;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .btn:hover{
+    background-color: white;
+    color: black;
+  }
+
+
+  img{
+    border-radius: 30px;
+  }
+
+  .btn1{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .btn1:hover{
+    background-color: white;
+    /* border: 1px solid; */
+    color: black;
+  }
+
+
+    
+  .row{
+    /* background-color: white; */
+    border-radius: 30px;
+    /* box-shadow: 12px 12px 22px black; */
+  }
+
+  img{
+    border-radius: 30px;
+  }
+
+  .btn1{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .btn1:hover{
+    background-color: white;
+    /* border: 1px solid; */
+    color: black;
+  }
+
+
 </style>
-
-<style>
-    .row{
-      /* background-color: white; */
-      border-radius: 30px;
-      /* box-shadow: 12px 12px 22px black; */
-    }
-
-    img{
-      border-radius: 30px;
-    }
-
-    .btn1{
-      border: none;
-      outline: none;
-      height: 50px;
-      width: 100%;
-      background-color: black;
-      color: white;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .btn1:hover{
-      background-color: white;
-      /* border: 1px solid; */
-      color: black;
-    }
-  </style>
 
 
 <body>
