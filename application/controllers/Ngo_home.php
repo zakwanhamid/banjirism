@@ -9,12 +9,5 @@ class Ngo_home extends CI_Controller {
       $this->load->view('templates/header',$data);
       $this->load->view('ngo_home');
       $this->load->view('templates/footer');
-    } else{
-        //Encrypt password
-        $enc_password = md5($this->input->post('user_password'));
-
-        $this->user_model->register($enc_password);
-
-        redirect('ngo_home')
-    }	
+    } 	
 }
