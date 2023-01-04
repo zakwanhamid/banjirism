@@ -83,6 +83,11 @@
     /* box-shadow: 12px 12px 22px black; */
   }
 
+  img{
+    border-radius: 30px;
+
+  }
+
 
   .btn1{
     border: none;

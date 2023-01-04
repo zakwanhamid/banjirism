@@ -1,9 +1,9 @@
 
     <section id="register">
-      <div class="container form my-4 mx-5">
+      <div class="container" class="form my-4 mx-5">
         <div class="row gx-0">
           <div class="col-lg-6">
-            <div class="col-lg-7 float-end">
+            <div class="col-lg-9 float-end">
               <img src="<?php echo base_url(); ?>/assets/volunteers1.jpg" class="img-fluid shadow" alt="volunteers">
             </div>
           </div>
