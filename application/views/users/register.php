@@ -1,4 +1,6 @@
+<?php echo validation_errors(); ?>
 
+<?php echo form_open('users/register'); ?>
     <section id="register">
       <div class="container" class="form my-4 mx-5">
         <div class="row gx-0">
@@ -14,31 +16,31 @@
             <form>
               <div class="form-row">
                 <div class="col-lg-7">
-                  <input placeholder="Organisation Name" class="form-control my-3 px-4">
+                  <input type="text" name="user_ngo_name" placeholder="Organisation Name" class="form-control my-3 px-4">
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="col-lg-7">
-                  <input placeholder="Username" class="form-control my-3 px-4">
+                  <input type="text" name="user_name" placeholder="Username" class="form-control my-3 px-4">
                 </div>
               </div>
   
               <div class="form-row">
                 <div class="col-lg-7">
-                  <input type="password" placeholder="********" class="form-control my-3 px-4">
+                  <input type="password" name="user_password" placeholder="********" class="form-control my-3 px-4">
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="col-lg-7">
-                  <input type="password" placeholder="confirm password" class="form-control my-3 px-4">
+                  <input type="password" name="user_password2" placeholder="confirm password" class="form-control my-3 px-4">
                 </div>
               </div>
   
               <div class="form-row">
                 <div class="col-lg-7">
-                  <button type="button" class="btn1 mb-3 shadow">Create Account</button>
+                  <button type="submit" class="btn1 mb-3 shadow">Create Account</button>
                 </div>
               </div>
             </form>
@@ -46,3 +48,5 @@
         </div>
       </div>
     </section>
+
+<?php echo form_close(); ?>
