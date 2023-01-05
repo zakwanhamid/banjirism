@@ -12,7 +12,7 @@
         $this->load->view('templates/header');
         $this->load->view('users/register', $data);
         $this->load->view('templates/footer');
-
+        
       }else{
         //Encrypt password
         $enc_password = md5($this->input->post('user_password'));
