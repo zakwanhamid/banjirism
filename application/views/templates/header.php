@@ -146,7 +146,8 @@
         </div>
       </div> 
     </nav>
+      <!-- Flash messages -->
+      <?php if($this->session->flashdata('user_registered')):?>
+        <?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_registered').'</p>'; ?>
 
-    <div class="container">
-      
-    </div>
+      <?php endif; ?>
