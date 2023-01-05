@@ -18,6 +18,7 @@
     padding: 0;
   }
 </style>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 <script src="http://maps.google.com/maps/api/js?key=AIzaSyAtPAcmfk6Vbg4vQSO2OG9Hbh1KFhzyTPc"
   type="text/javascript"></script>
 <div id="map"></div>
