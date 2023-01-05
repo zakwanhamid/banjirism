@@ -140,9 +140,13 @@
               <a class="nav-link" href="<?php echo base_url('Login/index'); ?>">Log in</a>
             </li>
             <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="<?php echo base_url('Register/index'); ?>">Register</a>   
+              <a class="nav-link" href="<?php echo base_url();?> users/register">Register</a>   
             </li>
           </ul>
         </div>
       </div> 
     </nav>
+
+    <div class="container">
+      
+    </div>
