@@ -20,7 +20,7 @@
 </style>
 <script src="http://maps.google.com/maps/api/js?key=AIzaSyAtPAcmfk6Vbg4vQSO2OG9Hbh1KFhzyTPc"
   type="text/javascript"></script>
-<div id="map" style="width: 500px; height: 400px;"></div>
+<div id="map"></div>
 
 <script type="text/javascript">
   var locations = [
