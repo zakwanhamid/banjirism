@@ -157,14 +157,10 @@
               <a class="nav-link" href="<?php echo base_url('Login/index'); ?>">Log in</a>
             </li>
             <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="<?php echo base_url();?> users/register">Register</a>   
+              <a class="nav-link" href="<?php echo base_url('Register/index');?>">Register</a>   
             </li>
           </ul>
         </div>
       </div> 
     </nav>
-      <!-- Flash messages -->
-      <?php if($this->session->flashdata('user_registered')):?>
-        <?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_registered').'</p>'; ?>
-
-      <?php endif; ?>
+     
