@@ -1,23 +1,3 @@
-<table border="1">  
-      <tbody>  
-         <tr>  
-            <td>Country Id</td>  
-            <td>Country Name</td>  
-         </tr>  
-         <?php  
-         foreach ($finance->result() as $row)  
-         {  
-            ?><tr>  
-            <td><?php echo $row->location_finance;?></td>  
-            <td><?php echo $row->ngo_name_finance;?></td> 
-            <td><?php echo $row->acc_name_finance;?></td>  
-            <td><?php echo $row->acc_num_finance;?></td> 
-            </tr>  
-         <?php }  
-         ?>  
-      </tbody>  
-   </table>
-
    <table class="table table-sm">
   <thead>
     <tr>
