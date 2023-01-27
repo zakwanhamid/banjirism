@@ -20,11 +20,18 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
+		// $query = $this->db->get('test');
+		// $results = $query->result();
+		// foreach ($results as $row) {
+		// 	echo 'ini adalah nama:'.$row->name_tab.'<br>'; // replace column_name with the actual name of the column you want to print
+		// }
 		$data['title'] = "Home";
 
 		$this->load->view('templates/header',$data);
 		$this->load->view('home');
 		$this->load->view('templates/footer');
 	}
+
+	
 	
 }

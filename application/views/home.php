@@ -53,7 +53,7 @@
               <div class="card-body text-center py-4">
                 <h4 class="card-title">Finances</h4>
                 <p class="card-text mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reiciendis quas aliquam sunt, facilis perferendis.</p>
-                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Select</a>
+                <a href="<?php echo base_url('finance/index'); ?>" class="btn btn-outline-primary btn-lg mt-3">Select</a>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@
               <div class="card-body text-center py-4">
                 <h4 class="card-title">Energies</h4>
                 <p class="card-text mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reiciendis quas aliquam sunt, facilis perferendis.</p>
-                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Select</a>
+                <a href="<?php echo base_url('energies/index'); ?>" class="btn btn-outline-primary btn-lg mt-3">Select</a>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@
               <div class="card-body text-center py-4">
                 <h4 class="card-title">Supplies</h4>
                 <p class="card-text mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reiciendis quas aliquam sunt, facilis perferendis.</p>
-                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Select</a>
+                <a href="<?php echo base_url('supplies/index'); ?>" class="btn btn-outline-primary btn-lg mt-3">Select</a>
               </div>
             </div>
           </div>
