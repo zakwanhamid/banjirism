@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => '34.76.115.70',
 	'username' => 'root',
-	'password' => '',
+	'password' => 'wuwcjDqE1rZyVm',
 	'database' => 'banjir_db',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
