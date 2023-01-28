@@ -16,5 +16,23 @@ class Status_comm extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
+	public function itemForm()
+	{
+	    $data['title'] = "create request item";
+
+		$this->load->database();
+		$this->load->model('StatusCommModel');
+	    $this->load->helper(array('form', 'url'));
+
+	    $this->load->library('form_validation');
+
+		$data['item_name'] = $this->StatusCommModel->getItemName();
+
+		$this->load->view('templates/header',$data);
+		$this->load->view('management/create_request', $data);
+		$this->load->view('templates/footer');
+
+	}
+
 	
 }

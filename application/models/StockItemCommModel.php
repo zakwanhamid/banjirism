@@ -17,4 +17,20 @@
             $query = $this->db->get();
             return $query ->result();
         }
+
+        public function create_post()
+        {
+            $this->db->insert('energies',$data);
+        }
+
+        public function getItem()
+        {
+            return $this->db->get('item_category')->result();
+        }
+
+        public function insertItem($query)
+        {
+            $this->db->insert('item',$query);
+        }
     }
+    ?>

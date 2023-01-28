@@ -1,22 +1,27 @@
 <h2><?= $title;?> </h2>
-<?php echo validation_errors(); ?>
-<?php echo form_open("Energies/create"); ?>
-<form>
-  <div class="mb-3">
-    <label>Energies ID</label>
-    <input type="text" class="form-control" name="energies_id" placeholder="Add Energies ID">
+<form action="<?= base_url()?>Stock_item_comm/createItem" method="post">
+  <div class="form-row">
+    <div class="col-lg-7">
+      <select class="form-select my-3 px-4" name="item_cat_name" id="identity" aria-label="Default select example">
+        <option selected>Select Item Category</option>
+        <?php foreach($category as $cat) { ?>
+        <option value="<?php echo $cat->item_CAT_id; ?>"><?php echo $cat->item_cat_name; ?></option>
+        <?php } ?>
+        <!-- <option value="2">Clothes</option>
+        <option value="3">First aid kit</option>
+        <option value="4">Cleaning supplies</option>
+        <option value="5">Toiletries</option>
+        <option value="6">Others</option> -->
+      </select>
+    </div>
   </div>
   <div class="mb-3">
-    <label>Location</label>
-    <input type="text" class="form-control" name="location_energies" placeholder="Add Location">
+    <label>item name</label>
+    <input type="text" class="form-control" name="item_name" placeholder="Add Item Name">
   </div>
   <div class="mb-3">
-    <label>Number Member</label>
-    <input type="text" class="form-control" name="num_member_energies" placeholder="Add Number Member">
-  </div>
-  <div class="mb-3">
-    <label>Phone Number</label>
-    <input type="text" class="form-control" name="phone_number_energies" placeholder="Add Phone Number">
+    <label>Item Description</label>
+    <input type="text" class="form-control" name="item_desc" placeholder="Add Item Description">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

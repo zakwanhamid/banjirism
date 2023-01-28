@@ -19,4 +19,19 @@
             $query = $this->db->get();
             return $query ->result();
         }
+
+        // public function create_post()
+        // {
+        //     $this->db->insert('energies',$data);
+        // }
+
+        public function getItemName()
+        {
+            return $this->db->get('item')->result();
+        }
+
+        public function insertItem($query)
+        {
+            $this->db->insert('item_request',$query);
+        }
     }
