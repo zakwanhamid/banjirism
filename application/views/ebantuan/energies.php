@@ -24,4 +24,9 @@
          <?php }  
          ?> 
   </tbody>
+  <div class="card-body text-center py-4">
+      <h4 class="card-title">Energies</h4>
+      <p class="card-text mx-2">Click the button below to enter your details in order to join the volunteerism to help those who affected by the flood </p>
+      <a href="<?php echo base_url('energies/create'); ?>" class="btn btn-outline-primary btn-lg mt-3">Click here</a>
+  </div>
 </table>
