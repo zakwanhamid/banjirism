@@ -40,7 +40,7 @@
     <div class="container-lg">
         <div class="text-center">
           <h2>e-Bantuan</h2>
-          <p class="lead px-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          <p class="lead px-5">ezzaty Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           Commodi placeat at laborum consectetur nobis libero repellat 
           reiciendis corrupti, cupiditate itaque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, quibusdam!</p>
         </div>
