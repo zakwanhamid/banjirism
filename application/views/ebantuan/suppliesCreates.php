@@ -3,10 +3,6 @@
 <?php echo form_open("Supplies/create"); ?>
 <form>
   <div class="mb-3">
-    <label>Supplies ID</label>
-    <input type="text" class="form-control" name="supplies_id" placeholder="Add Supplies ID">
-  </div>
-  <div class="mb-3">
     <label>Location</label>
     <input type="text" class="form-control" name="location_supplies" placeholder="Add Location">
   </div>

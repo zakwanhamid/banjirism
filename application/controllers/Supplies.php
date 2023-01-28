@@ -27,8 +27,7 @@ class Supplies extends CI_Controller {
 	    $this->load->helper(array('form', 'url'));
 
 	    $this->load->library('form_validation'); 
-		
-	    $this->form_validation->set_rules('supplies_id', 'Supplies Id', 'required');
+
 	    $this->form_validation->set_rules('location_supplies', 'Location', 'required');
 	    $this->form_validation->set_rules('unit_item_supplies', 'Unit Item Supplies', 'required');
 	    $this->form_validation->set_rules('phone_number_supplies', 'Phone Number', 'required');
