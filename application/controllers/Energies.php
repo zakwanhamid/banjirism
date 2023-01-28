@@ -28,7 +28,7 @@ class Energies extends CI_Controller {
 
 	    $this->load->library('form_validation'); 
 		
-	    $this->form_validation->set_rules('energies_id', 'Energies Id', 'required');
+	    
 	    $this->form_validation->set_rules('location_energies', 'Location', 'required');
 	    $this->form_validation->set_rules('num_member_energies', 'Number Member', 'required');
 	    $this->form_validation->set_rules('phone_number_energies', 'Phone Number', 'required');

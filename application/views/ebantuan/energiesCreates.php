@@ -3,10 +3,6 @@
 <?php echo form_open("Energies/create"); ?>
 <form>
   <div class="mb-3">
-    <label>Energies ID</label>
-    <input type="text" class="form-control" name="energies_id" placeholder="Add Energies ID">
-  </div>
-  <div class="mb-3">
     <label>Location</label>
     <input type="text" class="form-control" name="location_energies" placeholder="Add Location">
   </div>

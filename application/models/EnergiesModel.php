@@ -15,8 +15,7 @@
 
         public function create_post()
         {
-            $data = array(
-                'energies_id' => $this->input->post('energies_id'), 
+            $data = array( 
                 'location_energies' => $this->input->post('location_energies'),
                 'num_member_energies' => $this->input->post('num_member_energies'),
                 'phone_number_energies' => $this->input->post('phone_number_energies')
