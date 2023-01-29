@@ -42,6 +42,10 @@
     background-color: #84ceeb;
   }
 
+  nav{
+    position: sticky-top;
+  }
+
 
   .btn {
     border: none;
@@ -148,13 +152,13 @@
               <a class="nav-link" href="<?php echo base_url(); ?>">Home</a>
             </li>
             <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="<?php echo base_url('Auth/loginNGO'); ?>">NGO Login</a>
+              <a class="nav-link" href="#aboutUs">About Us</a>
             </li>
             <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="<?php echo base_url('Auth/loginComm'); ?>">Hall Login</a>
+              <a class="nav-link" href="#eBantuan">e-Bantuan</a>
             </li>
             <li class="nav-item ms-lg-4">
-              <a class="nav-link" href="<?php echo base_url('Auth/register');?>">Register</a>   
+              <a class="nav-link" href="<?php echo base_url('Auth/logoutComm'); ?>">Log Out</a>
             </li>
           </ul>
         </div>
