@@ -17,7 +17,7 @@
             ?><tr>  
             <td><?php echo $row['item_request_id'];?></td>  
             <td><?php echo $row['item_cat_name'];?></td>
-            <td><?php echo $row['quantity_request']; ?></td>>
+            <td><?php echo $row['quantity_request']; ?></td>
             <td><?php echo $row['balance_quantity'];?></td>  
             </tr>  
          <?php }  
