@@ -3,10 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Stock_item_comm extends CI_Controller {
 
-	public function index($comm_id)
+	public function index()
 	{
         $data['title'] = "Stock item comm";
-
+		$this->load->library('session');
+        $comm_id=$this->session->userdata('loggedIn')['comm_id'];
         
         $this->load->database();
 		$this->load->model('StockItemCommModel');
