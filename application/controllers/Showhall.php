@@ -18,9 +18,9 @@ class Showhall extends CI_Controller
     //$data['title'] = "Community Hall";
     $title = "Community Hall";
     //$this->load->view('templates/header', $title);
-    $data['title'] = "Community Hall";
+    //$data['title'] = "Community Hall";
     //$title = "Community Hall";
-    $this->load->view('templates/header', $data);
+    //$this->load->view('templates/header', $data);
     $this->load->view('showhall', ['data' => $data]);
     $this->load->view('templates/footer');
   }
