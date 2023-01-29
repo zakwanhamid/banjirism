@@ -22,7 +22,7 @@
       <div class="md-10 text-md-start shadow" style="background-color: rgba(255, 255, 255, 0.5)">
         <div class="p-5">
           <h1 class="pb-5 text-center"> About Us</h1>
-          <p class="px-5 text-justify justify-content-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, 
+          <p class="px-5 text-justify justify-content-center">eezzzzzLorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, 
           facilis inventore fugiat itaque sequi aperiam provident eos commodi aspernatur nulla. Lorem ipsum dolor 
           sit amet consectetur adipisicing elit. Nobis, harum earum. Tempora cum id molestiae eveniet placeat sequi 
           aliquam ad deleniti iure voluptatibus, expedita architecto laudantium atque, veritatis non nisi esse! Natus 
