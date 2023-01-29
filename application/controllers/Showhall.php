@@ -17,7 +17,7 @@ class Showhall extends CI_Controller
     $data = $this->db->select('*')->from('communityhall')->get()->result();
     //$data['title'] = "Community Hall";
     $title = "Community Hall";
-    $this->load->view('templates/header', $title);
+    //$this->load->view('templates/header', $title);
     $this->load->view('showhall', ['data' => $data]);
     $this->load->view('templates/footer');
   }
