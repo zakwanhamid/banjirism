@@ -34,5 +34,17 @@ class Status_comm extends CI_Controller {
 
 	}
 
+	public function createItem() {
+
+		$this->load->model('StatusCommModel');
+
+		$data1 = array( 
+			'quantity_request' => $this->input->post('quantity_request'), 'item_name' => $this->input->post('item_name'), 'item_desc' => $this->input->post('item_desc')
+		);
+
+		$this->StatusCommModel->insertItem($data1);
+
+	}
+
 	
 }
