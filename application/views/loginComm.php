@@ -10,10 +10,20 @@
           
 
           <div class="col-lg-6 px-5">
+          <?php if($this->session->flashdata('error')){
+
+          ?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <?php echo $this->session->flashdata('error');?>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <?php } ?>
             <h1 class="font-weight-bold py-3">Welcome Back!</h1>
-            <h4>Sign in To Community/NGO Account</h4>
-            <form>
-              <div class="form-row">
+            <h4>Sign in to Community Hall Account</h4>
+            <form action="<?php echo base_url(); ?>auth/verifyLoginComm" method="POST">
+              <!-- <div class="form-row">
                 <div class="col-lg-7">
                   <select class="form-select my-3 px-4" name="idenity" id="identity" aria-label="Default select example">
                     <option selected>Select Identity</option>
@@ -21,23 +31,23 @@
                     <option value="2">Community Hall</option>
                   </select>
                 </div>
-              </div>
+              </div> -->
 
               <div class="form-row">
                 <div class="col-lg-7">
-                  <input placeholder="Username" class="form-control my-3 px-4">
+                  <input name="comm_username" placeholder="Username" class="form-control my-3 px-4" required>
                 </div>
               </div>
   
               <div class="form-row">
                 <div class="col-lg-7">
-                  <input type="password" placeholder="********" class="form-control my-3 px-4">
+                  <input name="comm_password" type="password" placeholder="********" class="form-control my-3 px-4" required>
                 </div>
               </div>
   
               <div class="form-row">
                 <div class="col-lg-7">
-                  <button type="button" class="btn1 mb-3 shadow">Login</button>
+                  <button type="submit" class="btn1 mb-3 shadow">Login</button>
                 </div>
               </div>
 
