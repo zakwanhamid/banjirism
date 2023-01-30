@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Stock_item_comm extends CI_Controller {
 
-	public function index($item_id = null)
+	public function index()
 	{
 		$data['title'] = "Stock item comm";
 		$this->load->library('session');
@@ -11,8 +11,7 @@ class Stock_item_comm extends CI_Controller {
 
 		$this->load->database();
 		$this->load->model('StockItemCommModel');
-		$data['item_requests'] = $this->StockItemCommModel->get_item_requests($item_id);
-		$data['item'] = $this->StockItemCommModel->get_StockItemComm($comm_id);
+		$data['items'] = $this->StockItemCommModel->get_StockItemComm();
 
 		$this->load->view('templates/headerComm',$data);
 		$this->load->view('management/stock_item_comm',$data);
@@ -20,9 +19,16 @@ class Stock_item_comm extends CI_Controller {
 	}
 
 	public function get_item_requests($item_id) {
+		
 		$this->load->database();
-		$this->db->where("item_id", $item_id);
-		return $this->db->get("item_request")->result();
+		$this->load->model('StockItemCommModel');
+		$data['item_requests'] = $this->StockItemCommModel->get_item_requests($item_id);
+
+		$this->load->view('templates/header',$data);
+		$this->load->view('management/item_request_view',$data);
+		$this->load->view('templates/footer');
+		//$this->db->where("item_id", $item_id);
+		//return $this->db->get("item_request")->result();
 	}
 
 	public function requestView($item_id) {
@@ -30,7 +36,7 @@ class Stock_item_comm extends CI_Controller {
 		$data["item_requests"] = $this->StockItemCommModel->get_item_requests($item_id);
 
 		$this->load->view('templates/headerComm',$data);
-		$this->load->view("item_request_view", $data);
+		$this->load->view("management/item_request_view", $data);
 		$this->load->view('templates/footer');
 	}
 
