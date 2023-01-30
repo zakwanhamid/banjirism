@@ -20,6 +20,7 @@
     /* height: 100%; */
     min-height: 100vh;
     padding: 150px 0;
+    background-color: #84ceeb;
   }
 
   #intro {

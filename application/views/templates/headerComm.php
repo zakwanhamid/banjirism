@@ -20,6 +20,8 @@
     /* height: 100%; */
     min-height: 100vh;
     padding: 150px 0;
+    background-color: #84ceeb;
+
   }
 
   #intro {
@@ -50,8 +52,8 @@
   .btn {
     border: none;
     outline: none;
-    height: 50px;
-    background-color: #8860d0;
+    height: 40px;
+    background-color: gray;
     color: white;
     border-radius: 5px;
     font-weight: bold;
@@ -62,21 +64,18 @@
     color: black;
   }
 
-
-  .btn1 {
+  .btn2 {
     border: none;
     outline: none;
-    height: 50px;
-    width: 100%;
-    background-color: black;
+    height: 40px;
+    background-color: gray;
     color: white;
     border-radius: 5px;
     font-weight: bold;
   }
 
-  .btn1:hover {
+  .btn2:hover {
     background-color: white;
-    /* border: 1px solid; */
     color: black;
   }
 
@@ -91,24 +90,6 @@
   img {
     border-radius: 30px;
 
-  }
-
-
-  .btn1 {
-    border: none;
-    outline: none;
-    height: 50px;
-    width: 100%;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-
-  .btn1:hover {
-    background-color: white;
-    /* border: 1px solid; */
-    color: black;
   }
 
   /* 

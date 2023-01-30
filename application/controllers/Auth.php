@@ -104,7 +104,7 @@
         redirect('Auth/secureComm');
       }else{
         $this->session->set_flashdata('error','Something went wrong');
-        // redirect('Auth/loginComm');
+        redirect('Auth/loginComm');
         
       }
     }
@@ -119,7 +119,7 @@
   }
   public function secureComm(){
     if($this->session->userdata('loggedIn')){
-        redirect('Auth/welcomeComm');
+        redirect('stock_item_comm/index');
     }else{
       redirect('Auth/verifyLoginComm');
     }
