@@ -14,7 +14,7 @@ class Stock_item_comm extends CI_Controller {
 		$data['item_requests'] = $this->StockItemCommModel->get_item_requests($item_id);
 		$data['item'] = $this->StockItemCommModel->get_StockItemComm($comm_id);
 
-		$this->load->view('templates/header',$data);
+		$this->load->view('templates/headerComm',$data);
 		$this->load->view('management/stock_item_comm',$data);
 		$this->load->view('templates/footer');
 	}
@@ -29,7 +29,7 @@ class Stock_item_comm extends CI_Controller {
 		$this->load->model("StockItemCommModel");
 		$data["item_requests"] = $this->StockItemCommModel->get_item_requests($item_id);
 
-		$this->load->view('templates/header',$data);
+		$this->load->view('templates/headerComm',$data);
 		$this->load->view("item_request_view", $data);
 		$this->load->view('templates/footer');
 	}
@@ -49,7 +49,7 @@ class Stock_item_comm extends CI_Controller {
 
 		$data['category'] = $this->StockItemCommModel->getItem();
 
-		$this->load->view('templates/header',$data);
+		$this->load->view('templates/headerComm',$data);
 		$this->load->view('management/create_stock_item_comm', $data);
 		$this->load->view('templates/footer');
 

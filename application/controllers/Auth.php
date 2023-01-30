@@ -104,7 +104,7 @@
         redirect('Auth/secureComm');
       }else{
         $this->session->set_flashdata('error','Something went wrong');
-        // redirect('Auth/loginComm');
+        redirect('Auth/loginComm');
         
       }
     }
