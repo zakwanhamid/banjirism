@@ -57,6 +57,10 @@
     color: black;
   }
 
+  #creat-post{
+    height: 40px;
+  }
+
 
 
   .row {
@@ -87,6 +91,11 @@
     /* border: 1px solid; */
     color: black;
   }
+
+  #create-form{
+    width: 40%;
+  }
+
 
   /* 
  * Always set the map height explicitly to define the size of the div element

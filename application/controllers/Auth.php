@@ -78,7 +78,7 @@
         $this->session->set_userdata('loggedIn', $sess_array);
         redirect('Auth/secureNGO');
       }else{
-        $this->session->set_flashdata('error','Something went wrong');
+        $this->session->set_flashdata('error','Usermame or password is incorrect');
         redirect('Auth/loginNGO');
       }
     }
