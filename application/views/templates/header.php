@@ -20,25 +20,6 @@
     /* height: 100%; */
     min-height: 100vh;
     padding: 150px 0;
-  }
-
-  #intro {
-    background-color: #84ceeb;
-  }
-
-  #aboutUs {
-    background-color: #84ceeb;
-  }
-
-  #eBantuan {
-    background-color: #84ceeb;
-  }
-
-  #login {
-    background-color: #84ceeb;
-  }
-
-  #register {
     background-color: #84ceeb;
   }
 
