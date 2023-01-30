@@ -35,7 +35,7 @@
   var infoWindowContent = [
         <?php foreach ($data as $locId) { ?>
       ['<div class="info_content">'
-      + '<h3><?php echo $locId->comm_hall_name; ?></h3>' + '<p><?php echo $locId->comm_id; ?></p>'+ '<a class="btn btn-primary" href="<?php echo base_url('energies/index'); ?>" role="button">Link</a>' +'<div>'],
+      + '<h3><?php echo $locId->comm_hall_name; ?></h3>' + '<p><?php echo $locId->comm_id; ?></p>'+ '<a class="btn btn-primary" href="<?php echo base_url('energies/index').'?id='.$locId->comm_id; ?>" role="button">Link</a>' +'<div>'],
         <?php } ?>       
       ];
 

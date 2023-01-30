@@ -21,4 +21,5 @@
     </tr>
     <?php endforeach; ?>
   </tbody>
+  <a href="<?php echo base_url("Status_comm/edit/".$item_request->item_request_id."/".$item_request->item_id); ?>" class="btn btn-outline-primary btn-lg mt-3">Click to Request</a>
 </table>

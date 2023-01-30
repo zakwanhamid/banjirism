@@ -7,14 +7,14 @@ class Status_ngo extends CI_Controller {
 	{
         $data['title'] = "Status NGO";
 
-        
-		$this->load->model('StatusCommModel');
-        $data['status_ngo'] = $this->StatusCommModel->get_StatusComm();
+		$this->load->library('session');
+		$data['comm_id']=$this->session->userdata('loggedIn');
+        $this->load->database();
+		$this->load->model('StatusNgoModel');
+		$data['item_requests'] = $this->StatusNgoModel->get_StatusNgo();
 
 		$this->load->view('templates/header',$data);
 		$this->load->view('management/status_ngo');
 		$this->load->view('templates/footer');
 	}
-
-	
 }
