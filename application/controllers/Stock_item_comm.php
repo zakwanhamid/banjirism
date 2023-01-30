@@ -7,7 +7,7 @@ class Stock_item_comm extends CI_Controller {
 	{
 		$data['title'] = "Stock item comm";
 		$this->load->library('session');
-		$comm_id=$this->session->userdata('loggedIn')['comm_id'];
+		$this->session->userdata('loggedIn')['comm_id'];
 
 		$this->load->database();
 		$this->load->model('StockItemCommModel');
