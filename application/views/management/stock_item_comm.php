@@ -14,14 +14,13 @@
         <tr>
           <th scope="row"></th>
           <?php  
-            foreach ($items as $row)
+            foreach ($item_requests as $row)
             {  
                 ?><tr>  
                 <td><?php echo $row['item_id'];?></td>  
                 <td><?php echo $row['item_cat_name'];?></td>
                 <td><?php echo $row['item_name'];?></td>
-                <td><a href="<?= base_url("item_request/index/".$row['item_id']) ?>" class="btn" >Request</a></td>
-                </tr>  
+                <td><a href="<?= base_url("Stock_item_comm/requestView/".$row['item_id']) ?>" class="btn" >Request</a></td>
             <?php }  
             ?> 
       </tbody>

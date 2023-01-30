@@ -11,7 +11,7 @@ class Stock_item_comm extends CI_Controller {
 
 		$this->load->database();
 		$this->load->model('StockItemCommModel');
-		$data['items'] = $this->StockItemCommModel->get_StockItemComm();
+		$data['item_requests'] = $this->StockItemCommModel->get_StockItemComm();
 
 		$this->load->view('templates/headerComm',$data);
 		$this->load->view('management/stock_item_comm',$data);
