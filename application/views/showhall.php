@@ -10,9 +10,13 @@
 <?php
 
 ?>
+
+<br><br><br>
+
 <div id="map"></div>
 
 <script>
+  // Inititate Map
   function initMap() {
     var map;
     var bounds = new google.maps.LatLngBounds();
@@ -25,19 +29,22 @@
     map.setTilt(50);
 
     //Multiple marker location
+
+    // [["Name",100.4321,90.325532],["Name",12.342352,54.215132]]
     var markers = [
-        <?php foreach ($data as $location) {
+        <?php foreach ($hallLoc as $location) {
           echo '["' . $location->comm_hall_name . '", ' . $location->latitude . ', ' . $location->longitude . '],';
         } ?>
       ];
 
   //info window content
   var infoWindowContent = [
-        <?php foreach ($data as $locId) { ?>
+        <?php foreach ($hallLoc as $locId) { ?>
       ['<div class="info_content">'
-      + '<h3><?php echo $locId->comm_hall_name; ?></h3>' + '<p><?php echo $locId->comm_id; ?></p>'+ '<a class="btn btn-primary" href="<?php echo base_url('energies/index').'?id='.$locId->comm_id; ?>" role="button">Link</a>' +'<div>'],
+      + '<h3><?php echo $locId->comm_hall_name; ?></h3>' + '<p><?php echo $locId->comm_id; ?></p>'+ '<a class="btn btn-primary" href="<?php echo base_url('Stock_item_comm/showItemHall').'?id='.$locId->comm_id.'&name='.$locId->comm_hall_name; ?>" role="button">Link</a>' +'<div>'],
         <?php } ?>       
       ];
+      //Use GET Method
 
   //Add multiple markers to map
   var infoWindow = new google.maps.InfoWindow(), marker, i;

@@ -43,12 +43,10 @@ class StockItemCommModel extends CI_Model
 
     public function getHall($id)
     {
-        $this->db->select('*');
-        $this->db->from('communityhall');
-        $this->db->where('comm_id', $id);
-        $qr = $this->db->get();
+        $qr = 'SELECT item.item_name, item.item_id, item.item_desc, item.quantity FROM item WHERE item.comm_id = ?';
 
-        return $qr->result();
+
+        return $this->db->query($qr, array($id))->result();
     }
 }
 ?>
