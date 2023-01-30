@@ -9,14 +9,10 @@
 
         public function get_StatusNgo()
         {
-
             $this->db->select('*');
-            $this->db->from('item_category');
-            $this->db->join('item', 'item_category.item_CAT_id = item.item_CAT_id');
-            $this->db->join('item_request', 'item.item_id = item_request.item_id');
-            $this->db->join('user', 'user.user_id = item_request.user_id');
-            $this->db->join('ngo_staff', 'ngo_staff.ngo_id = user.user_id');
+            $this->db->from('item');
+            $this->db->join('item_category', 'item.item_CAT_id = item_category.item_CAT_id');
             $query = $this->db->get();
-            return $query ->result();
+            return $query->result_array();
         }
     }

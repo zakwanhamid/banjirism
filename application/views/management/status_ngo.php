@@ -1,24 +1,30 @@
 <h2><?= $title;?> </h2>
-<table class="table table-sm">
-  <thead>
-    <tr>
-        <th scope="col">Date</th>
-        <th scope="col">Ngo Name</th>
-        <th scope="col">Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row"></th>
-      <?php  
-         foreach ($status_ngo as $row)
-         {  
-            ?><tr>  
-            <td><?php echo $row->date_request;?></td>  
-            <td><?php echo $row->ngo_name;?></td>
-            <td><?php echo $row->status; ?></td>> 
-            </tr>  
-         <?php }  
-         ?> 
-  </tbody>
-</table>
+<section>
+  <div class="container-lg">
+    <h2 class="mb-5">Stock Item </h2>
+    <table class="table table-sm">
+      <thead>
+        <tr>
+            <th scope="col">Item Code</th>
+            <th scope="col">Item Category</th>
+            <th scope="col">Item Name</th>
+            <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"></th>
+          <?php  
+            foreach ($item_requests as $row)
+            {  
+                ?><tr>  
+                <td><?php echo $row['item_id'];?></td>  
+                <td><?php echo $row['item_cat_name'];?></td>
+                <td><?php echo $row['item_name'];?></td>
+                <td><a href="<?= base_url("#") ?>" class="btn" >Supply</a></td>
+            <?php }  
+            ?> 
+      </tbody>
+    </table>
+  </div>
+</section>
