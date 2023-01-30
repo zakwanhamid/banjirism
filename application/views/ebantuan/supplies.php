@@ -1,3 +1,5 @@
+<div class="container-lg">
+   
 <table class="table table-sm">
   <thead>
     <tr>
@@ -28,6 +30,9 @@
       <h4 class="card-title">Supplies</h4>
       <p class="card-text mx-2">Fill the form below to supply an item to those who suffer from flood</p>
       <p class="card-text mx-2">The Neighborhood community will contact you as soon as possible</p>
-      <a href="<?php echo base_url('supplies/create'); ?>" class="btn btn-outline-primary btn-lg mt-3">Click here</a>
   </div>
+
+  <a href="<?php echo base_url('energies/create'); ?>" class="btn btn-outline-primary btn-lg mt-3">Create Post</a>
 </table>
+
+</div>
