@@ -79,7 +79,9 @@
     color: black;
   }
 
-
+  #create-form{
+    width: 40%;
+  }
 
   .row {
     /* background-color: white; */

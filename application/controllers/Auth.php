@@ -80,8 +80,8 @@ class Auth extends CI_Controller
         $sess_array = array('ngo_id' => $session[0]->ngo_id, 'ngo_username' => $session[0]->ngo_username);
         $this->session->set_userdata('loggedIn', $sess_array);
         redirect('Auth/secureNGO');
-      } else {
-        $this->session->set_flashdata('error', 'Something went wrong');
+      }else{
+        $this->session->set_flashdata('error','Usermame or password is incorrect');
         redirect('Auth/loginNGO');
       }
     }
