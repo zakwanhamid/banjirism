@@ -14,7 +14,7 @@
         <tr>
           <th scope="row"></th>
           <?php  
-            foreach ($item as $row)
+            foreach ($items as $row)
             {  
                 ?><tr>  
                 <td><?php echo $row['item_id'];?></td>  
