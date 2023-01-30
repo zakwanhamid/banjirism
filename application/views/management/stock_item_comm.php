@@ -12,13 +12,13 @@
     <tr>
       <th scope="row"></th>
       <?php  
-         foreach ($item as $row)
+         foreach ($items as $row)
          {  
-            ?><tr>  
-            <td><?php echo $row['item_id'];?></td>  
+            ?><tr> 
+            <td><?php echo $row['item_id'];?></td> 
             <td><?php echo $row['item_cat_name'];?></td>
             <td><?php echo $row['item_name'];?></td>
-            <td><a href="<?= base_url("item_request/index/".$row['item_id']) ?>">Request</a></td>
+            <td><a href="<?php echo base_url('stock_item_comm/get_item_requests/'.$row['item_id']) ?>">Request</a></td>
             </tr>  
          <?php }  
          ?> 

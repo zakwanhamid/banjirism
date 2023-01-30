@@ -7,11 +7,9 @@
             parent::__construct();
         }
 
-        public function get_StockItemComm($comm_id)
+        public function get_StockItemComm()
         {
-            $this->db->select('item.item_id');
-            $this->db->select('item_category.item_cat_name');
-            $this->db->select('item.item_name');
+            $this->db->select('*');
             $this->db->from('item');
             $this->db->join('item_category', 'item.item_CAT_id = item_category.item_CAT_id');
             $query = $this->db->get();
@@ -20,8 +18,11 @@
         }
 
         public function get_item_requests($item_id) {
-            $this->db->where("item_id", $item_id);
-            return $this->db->get("item_request")->result();
+            $this->db->select('*');
+            $this->db->from('item_request');
+            $this->db->where('item_id', $item_id);
+            $query = $this->db->get();
+            return $query->result();
           }
 
         public function getItem()
