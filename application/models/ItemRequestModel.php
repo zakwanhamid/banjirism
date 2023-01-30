@@ -1,5 +1,5 @@
 <?php
-    class StatusCommModel extends CI_Model
+    class ItemRequestModel extends CI_Model
     {
         public function __construct()
         {
@@ -7,7 +7,7 @@
             parent::__construct();
         }
 
-        public function get_StatusComm()
+        public function get_ItemRequest()
         {
 
             $this->db->select('*');
