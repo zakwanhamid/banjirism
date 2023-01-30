@@ -9,29 +9,34 @@
 
         public function get_StockItemComm($comm_id)
         {
-            $this->db->select('item_request.item_request_id, item_category.item_cat_name, item_request.quantity_request, item_request.balance_quantity');
-            $this->db->from('item_request');
-            $this->db->join('item', 'item_request.item_id = item.item_id');
+            $this->db->select('item.item_id');
+            $this->db->select('item_category.item_cat_name');
+            $this->db->select('item.item_name');
+            $this->db->from('item');
             $this->db->join('item_category', 'item.item_CAT_id = item_category.item_CAT_id');
-            $this->db->where('item_request.comm_id', $comm_id);
             $query = $this->db->get();
             return $query->result_array();
 
         }
 
-        public function create_post()
-        {
-            $this->db->insert('energies',$data);
-        }
+        public function get_item_requests($item_id) {
+            $this->db->where("item_id", $item_id);
+            return $this->db->get("item_request")->result();
+          }
 
         public function getItem()
         {
             return $this->db->get('item_category')->result();
         }
 
-        public function insertItem($query)
+        public function insertItem1($query)
         {
             $this->db->insert('item',$query);
+        }
+
+        public function insertItem2($query)
+        {
+            $this->db->insert('item_request',$query);
         }
     }
     ?>

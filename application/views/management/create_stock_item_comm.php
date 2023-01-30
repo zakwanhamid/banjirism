@@ -7,11 +7,6 @@
         <?php foreach($category as $cat) { ?>
         <option value="<?php echo $cat->item_CAT_id; ?>"><?php echo $cat->item_cat_name; ?></option>
         <?php } ?>
-        <!-- <option value="2">Clothes</option>
-        <option value="3">First aid kit</option>
-        <option value="4">Cleaning supplies</option>
-        <option value="5">Toiletries</option>
-        <option value="6">Others</option> -->
       </select>
     </div>
   </div>

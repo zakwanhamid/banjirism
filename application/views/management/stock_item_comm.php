@@ -3,8 +3,8 @@
   <thead>
     <tr>
         <th scope="col">Item Code</th>
+        <th scope="col">Item Category</th>
         <th scope="col">Item Name</th>
-        <th scope="col">Quantity</th>
         <th scope="col">Requested</th>
     </tr>
   </thead>
@@ -15,12 +15,15 @@
          foreach ($item as $row)
          {  
             ?><tr>  
-            <td><?php echo $row['item_request_id'];?></td>  
+            <td><?php echo $row['item_id'];?></td>  
             <td><?php echo $row['item_cat_name'];?></td>
-            <td><?php echo $row['quantity_request']; ?></td>
-            <td><?php echo $row['balance_quantity'];?></td>  
+            <td><?php echo $row['item_name'];?></td>
+            <td><a href="<?= base_url("item_request/index/".$row['item_id']) ?>">Request</a></td>
             </tr>  
          <?php }  
          ?> 
   </tbody>
 </table>
+<div class="card-body text-center py-4">
+      <a href="<?php echo base_url('Stock_item_comm/itemForm'); ?>" class="btn btn-outline-primary btn-lg mt-3">create new item</a>
+  </div>
