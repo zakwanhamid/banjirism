@@ -102,11 +102,15 @@ class Stock_item_comm extends CI_Controller
 	{
 		$this->load->model('StockItemCommModel');
 		$id = $this->input->get('id');
+		$data['name'] = $this->input->get('name');
+
+		$data['title'] = "Community Hall Details";
 
 		$data['commHall'] = $this->StockItemCommModel->getHall($id);
 
 		$this->load->view('templates/headerComm', $data);
-		$this->load->view('management');
+		$this->load->view('management/status_ngo', $data);
+		$this->load->view('templates/footer');
 	}
 }
 
