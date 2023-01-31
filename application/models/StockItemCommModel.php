@@ -7,11 +7,12 @@ class StockItemCommModel extends CI_Model
         parent::__construct();
     }
 
-    public function get_StockItemComm()
+    public function get_StockItemComm($comm_id)
     {
         $this->db->select('*');
         $this->db->from('item');
         $this->db->join('item_category', 'item.item_CAT_id = item_category.item_CAT_id');
+        $this->db->where('item.comm_id', $comm_id);
         $query = $this->db->get();
         return $query->result_array();
 

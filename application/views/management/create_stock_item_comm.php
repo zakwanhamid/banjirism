@@ -7,6 +7,7 @@
           <select class="form-select my-3 px-4" name="item_cat_name" id="identity" aria-label="Default select example">
             <option selected>Select Item Category</option>
             <?php foreach($category as $cat) { ?>
+              <input type="hidden" name="item_id" value="<?php echo $item_id; ?>">
             <option value="<?php echo $cat->item_CAT_id; ?>"><?php echo $cat->item_cat_name; ?></option>
             <?php } ?>
           </select>

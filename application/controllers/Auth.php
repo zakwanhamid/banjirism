@@ -125,6 +125,7 @@ class Auth extends CI_Controller
   public function secureComm()
   {
     if ($this->session->userdata('loggedIn')) {
+      //redirect('Auth/welcomeComm');
       redirect('stock_item_comm/index');
     } else {
       redirect('Auth/verifyLoginComm');

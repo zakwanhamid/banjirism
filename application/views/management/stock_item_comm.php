@@ -32,7 +32,13 @@
                 </tbody>
               </table>
               <div class="card-body text-end py-4">
-                <a href="<?php echo base_url('Stock_item_comm/itemForm'); ?>" class="btn">Create New Item</a>
+              <?php
+              foreach ($items as $row)
+                      {  
+                          ?>
+                          <a href="<?php echo base_url("Stock_item_comm/itemForm/".$row['item_id']); ?>" class="btn">Create New Item</a>  
+                      <?php }
+                      ?>  
               </div>
             </div>
           </div>
